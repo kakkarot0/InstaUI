@@ -1,0 +1,95 @@
+.post {
+    width: 550px;
+    margin: 30px 40px 50px 40px;
+  }
+  
+  .post__header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .post__headerAuthor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bolder;
+  }
+  
+  .post__headerAuthor > span {
+    color: grey;
+    font-size: 15px;
+  }
+  
+  .post__image > img {
+    width: 100%;
+    border-radius: 6px;
+    border: 0.6px solid rgba(128, 128, 128, 0.516);
+  }
+  
+  .post__footer {
+  }
+  
+  .post__footerIcons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .postIcon {
+    padding: 7px;
+    font-size: 30px;
+  }
+  
+  .postIcon :hover {
+    cursor: pointer;
+  }
+
+
+  @media (max-width: 768px) {
+    .post {
+      width: 90%; /* Adjust width for smaller screens */
+      margin: 20px 10px; /* Adjust margins */
+    }
+  
+    .post__header {
+      flex-direction: column; /* Stack header items vertically */
+      align-items: flex-start;
+    }
+  
+    .post__headerAuthor {
+      margin-bottom: 10px; /* Add margin to separate elements */
+    }
+  
+    .post__headerAuthor > span {
+      font-size: 14px; /* Adjust font size */
+    }
+  
+    .postIcon {
+      font-size: 25px; /* Adjust icon size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .post {
+      width: 100%; /* Full width for very small screens */
+      margin: 10px 5px; /* Adjust margins */
+    }
+  
+    .post__headerAuthor {
+      flex-direction: column; /* Stack author info vertically */
+      align-items: flex-start;
+    }
+  
+    .post__headerAuthor > span {
+      font-size: 13px; /* Adjust font size */
+    }
+  
+    .postIcon {
+      font-size: 20px; /* Further adjust icon size */
+      padding: 5px; /* Adjust padding */
+    }
+  }
